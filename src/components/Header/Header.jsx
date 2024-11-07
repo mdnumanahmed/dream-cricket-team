@@ -3,7 +3,7 @@ import { BsCoin } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="navbar bg-base-100 max-h-16 border-2 mt-6 py-6">
         <div className="navbar-start">
           <div className="dropdown">
@@ -41,7 +41,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <a className="text-xl">
             <img className="max-h-14" src={logo} alt="" />
           </a>
         </div>

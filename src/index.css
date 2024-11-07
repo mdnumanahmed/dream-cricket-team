@@ -7,3 +7,14 @@
 body{
       font-family: "Sora", sans-serif;
 }
+.sora{
+      font-family: "Sora", sans-serif;
+}
+/* 
+bg-gradient-to-tr from-transparent from-10% via-[#131313ca] to-90% */
+/* .grad {
+      background: rgb(213,212,227);
+      background: linear-gradient(29deg, rgba(213,212,227,0.2358193277310925) 9%, rgba(2,0,36,1) 22%, rgba(2,0,36,1) 73%, rgba(213,212,227,0.3310574229691877) 93%);
+} */
+
+
