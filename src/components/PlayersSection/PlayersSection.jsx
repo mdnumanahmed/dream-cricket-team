@@ -38,6 +38,13 @@ const PlayersSection = () => {
     setIsSelected(false);
   };
 
+  const handleRemove = (id) => {
+    const remaining = choosedPlayers.filter((pl) => pl.playerId !== id);
+    setChoosedPlayers(remaining);
+    const removedPlayer = choosedPlayers.find((pl) => pl.playerId === id);
+    setPlayers([...players, removedPlayer]);
+  };
+
   return (
     <div className="container mx-auto py-20">
       <div className="flex justify-between">
