@@ -5,6 +5,7 @@ import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 const PlayersSection = () => {
   const [players, setPlayers] = useState([]);
   const [choosedPlayers, setChoosedPlayers] = useState([]);
+  const [isSelected, setIsSelected] = useState(false);
 
   useEffect(() => {
     const loadPlayers = async () => {
@@ -27,6 +28,14 @@ const PlayersSection = () => {
       (pl) => pl.playerId !== player.playerId
     );
     setPlayers(newAvailable);
+  };
+
+  const handleSelectedBtn = () => {
+    setIsSelected(true);
+  };
+
+  const handleAvailableBtn = () => {
+    setIsSelected(false);
   };
 
   return (
