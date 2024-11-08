@@ -1,6 +1,6 @@
 const NewsLetter = () => {
   return (
-    <div className="container mx-auto bg-[url('../../assets/bg-shadow.png')] bg-no-repeat bg-cover bg-center px-60 py-24 rounded-3xl ring-2 ring-white ring-offset-[24px] ring-offset-white/15">
+    <div className="container mx-auto bg-slate-50 bg-[url('../../../assets/bg-shadow.png')] bg-no-repeat bg-cover bg-center px-60 py-24 rounded-3xl ring-2 ring-white ring-offset-[24px] ring-offset-current relative top-48 shadow-xl">
       <div className="space-y-4 max-w-4xl text-center">
         <h3 className="text-4xl font-bold text-[#131313]">
           Subscribe to our Newsletter
