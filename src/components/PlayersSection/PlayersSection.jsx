@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import Player from "../Player/Player";
+import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
 const PlayersSection = () => {
   const [players, setPlayers] = useState([]);
+  const [choosedPlayers, setChoosedPlayers] = useState([]);
 
   useEffect(() => {
     const loadPlayers = async () => {
@@ -12,6 +14,21 @@ const PlayersSection = () => {
     };
     loadPlayers();
   }, []);
+
+  const handleChoosePlayer = (player) => {
+    // const isExists = choosedPlayers.find(
+    //   (pl) => pl.playerId === player.playerId
+    // );
+    // if (!isExists) {
+    // }
+    const newChoosed = [...choosedPlayers, player];
+    setChoosedPlayers(newChoosed);
+    const newAvailable = players.filter(
+      (pl) => pl.playerId !== player.playerId
+    );
+    setPlayers(newAvailable);
+  };
+
   return (
     <div className="container mx-auto py-20">
       <div className="flex justify-between">
@@ -19,18 +36,37 @@ const PlayersSection = () => {
           Available Players : {players.length}
         </h3>
         <div>
-          <button className="text-base font-bold px-8 py-4 border-2 border-[#E7FE29]  bg-[#E7FE29] rounded-l-2xl">
+          <button
+            onClick={handleAvailableBtn}
+            className="text-base font-bold px-8 py-4 border-2 border-[#E7FE29]  bg-[#E7FE29] rounded-l-2xl"
+          >
             Availabe
           </button>
-          <button className="text-base font-bold px-8 py-4 border-2 border-[#E7FE29] bg-[#E7FE29] rounded-r-2xl">
-            Selected (0){" "}
+          <button
+            onClick={handleSelectedBtn}
+            className="text-base font-bold px-8 py-4 border-2 border-[#E7FE29] bg-[#E7FE29] rounded-r-2xl"
+          >
+            Selected {choosedPlayers.length}{" "}
           </button>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-6">
-        {players.map((player) => (
-          <Player key={player.playerId} player={player} />
-        ))}
+        {!isSelected &&
+          players.map((player) => (
+            <Player
+              key={player.playerId}
+              player={player}
+              handleChoosePlayer={handleChoosePlayer}
+            />
+          ))}
+      </div>
+      <div>
+        {isSelected && (
+          <SelectedPlayers
+            choosedPlayers={choosedPlayers}
+            handleRemove={handleRemove}
+          />
+        )}
       </div>
     </div>
   );

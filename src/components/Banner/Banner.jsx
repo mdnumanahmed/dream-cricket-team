@@ -1,8 +1,7 @@
 import HeroImg from "../../../assets/banner-main.png";
-import HeroBg from "../../../assets/bg-shadow.png";
+// import HeroBg from "../../../assets/bg-shadow.png";
 
 const Banner = () => {
-  console.log(HeroBg);
   return (
     <div>
       <div
