@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": "P001",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/6FNRD3P/tamim.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Off-spin",
+    "biddingPrice": 1200000
+  },
+  {
+    "playerId": "P002",
+    "name": "Samuel O'Neil",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/zX433T9/onil.jpg",
+    "role": "Bowler",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "Fast",
+    "biddingPrice": 900000
+  },
+  {
+    "playerId": "P003",
+    "name": "Wahab Riaz",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/WH3JrFv/wahab.jpg",
+    "role": "All-rounder",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Leg-spin",
+    "biddingPrice": 1500000
+  },
+  {
+    "playerId": "P004",
+    "name": "Dylan Reeves",
+    "country": "England",
+    "image": "https://i.ibb.co.com/6yJY0k2/Dylan-Reeves.jpg",
+    "role": "Wicketkeeper",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "None",
+    "biddingPrice": 800000
+  },
+  {
+    "playerId": "P005",
+    "name": "Aakash Nair",
+    "country": "India",
+    "image": "https://i.ibb.co.com/hmHJMHV/Aakash-Nair.jpg",
+    "role": "Bowler",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "Off-spin",
+    "biddingPrice": 700000
+  },
+  {
+    "playerId": "P006",
+    "name": "Carlos Mendes",
+    "country": "West Indies",
+    "image": "https://i.ibb.co.com/CvqnxJQ/Carlos-Mendes.jpg",
+    "role": "All-rounder",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Fast",
+    "biddingPrice": 1300000
+  },
+  {
+    "playerId": "P007",
+    "name": "Hamza Alvi",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/wMqchh1/Hamza-Alvi.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "None",
+    "biddingPrice": 950000
+  },
+  {
+    "playerId": "P008",
+    "name": "Thomas Green",
+    "country": "South Africa",
+    "image": "https://i.ibb.co.com/L6RvPhC/Thomas-Green.jpg",
+    "role": "Bowler",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "Fast",
+    "biddingPrice": 1000000
+  },
+  {
+    "playerId": "P009",
+    "name": "Sakib Al Hassan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/vkLj7DZ/sakib.jpg",
+    "role": "All-rounder",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Off-spin",
+    "biddingPrice": 1200000
+  },
+  {
+    "playerId": "P010",
+    "name": "Jacob Hunter",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/s1J2G0M/Jacob-Hunter.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "None",
+    "biddingPrice": 850000
+  },
+  {
+    "playerId": "P011",
+    "name": "Liam Sullivan",
+    "country": "England",
+    "image": "https://i.ibb.co.com/c8FkG29/Liam-Sullivan.jpg",
+    "role": "Wicketkeeper",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "None",
+    "biddingPrice": 920000
+  },
+  {
+    "playerId": "P012",
+    "name": "Surya Patel",
+    "country": "India",
+    "image": "https://i.ibb.co.com/N2Xpm17/Surya-Patel.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "None",
+    "biddingPrice": 1050000
+  },
+  {
+    "playerId": "P013",
+    "name": "Ishaq Rahman",
+    "country": "Afghanistan",
+    "image": "https://i.ibb.co.com/DzPky9r/Ishaq-Rahman.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Leg-spin",
+    "biddingPrice": 750000
+  },
+  {
+    "playerId": "P014",
+    "name": "Declan Murphy",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/4JBkQSy/Declan-Murphy.jpg",
+    "role": "All-rounder",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Fast",
+    "biddingPrice": 1100000
+  },
+  {
+    "playerId": "P015",
+    "name": "Ranjit Saini",
+    "country": "Sri Lanka",
+    "image": "https://i.ibb.co.com/wMwNgbw/Ranjit-Saini.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "None",
+    "biddingPrice": 950000
+  }
+]
