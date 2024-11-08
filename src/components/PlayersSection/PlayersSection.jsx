@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaUser, FaFlag } from "react-icons/fa";
+import Player from "../Player/Player";
 
 const PlayersSection = () => {
   const [players, setPlayers] = useState([]);
@@ -27,33 +27,10 @@ const PlayersSection = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-3">
-        <div className="space-y-4">
-          <img src="" alt="" />
-          <h3 className="flex gap-4 text-xl font-semibold">
-            {" "}
-            <FaUser />
-            Tamim Ekbal
-          </h3>
-          <div className="flex justify-between">
-            <p className="flex gap-4">
-              {" "}
-              <FaFlag />
-              Country
-            </p>
-            <p className="btn btn-sm">All Rounder</p>
-          </div>
-          <hr />
-          <h3 className="text-lg font-semibold">Rating</h3>
-          <div className="flex justify-between">
-            <h3 className="text-lg font-semibold">Batting/Bowlling Type</h3>
-            <p>Batting/Bowlling Type</p>
-          </div>
-          <div className="flex justify-between">
-            <h3 className="text-lg font-semibold">Price: 1500000</h3>
-            <button className="btn btn-outline btn-sm">Choose Player</button>
-          </div>
-        </div>
+      <div className="grid grid-cols-3 gap-6">
+        {players.map((player) => (
+          <Player key={player.playerId} player={player} />
+        ))}
       </div>
     </div>
   );
