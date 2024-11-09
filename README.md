@@ -4,7 +4,7 @@
 
 This project is a web application to manage and select players for a fantasy team, with design elements based on a Figma template. Users have a set amount of in-app currency (coins) and can increase their coins to select players. The application allows toggling between available and selected players, includes an interactive Navbar and Banner, and provides notifications for actions like adding or removing players.
 
-- [Dream Cricket Team](https://github.com/vitejs/vite-plugin-react-swc)
+- [Dream Cricket Team](https://dream-cricket-team-ns.netlify.app/)
 
 ## Key Features
 - Navbar and Coin Display: Shows the user’s coin balance (starting at 0) in the Navbar.
