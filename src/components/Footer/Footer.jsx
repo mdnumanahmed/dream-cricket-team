@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto  text-white pt-60">
         <footer className="footer footer-center p-10">
           <aside>
-            <img src="../../../assets/logo-footer.png" alt="" />
+            <img src="https://i.ibb.co.com/GWqVJMZ/logo-footer.png" alt="" />
           </aside>
         </footer>
         <footer className="footer  p-10">

@@ -1,15 +1,17 @@
 import PropTypes from "prop-types";
-import HeroImg from "../../../assets/banner-main.png";
-// import HeroBg from "../../../assets/bg-shadow.png";
 
 const Banner = ({ handleClaimCoin }) => {
   return (
     <div>
       <div
-        className={`container mx-auto bg-[url(../../../assets/bg-shadow1.png)] bg-no-repeat bg-cover bg-center text-center  mt-6 rounded-3xl`}
+        className={`container mx-auto bg-[url(https://i.ibb.co.com/TMrjGCk/bg-shadow1.png)] bg-no-repeat bg-cover bg-center text-center  mt-6 rounded-3xl`}
       >
         <div className="py-16 rounded-3xl space-y-6">
-          <img src={HeroImg} alt="" className="inline-block" />
+          <img
+            src="https://i.ibb.co.com/sRYzPJx/banner-main.png"
+            alt=""
+            className="inline-block"
+          />
           <h2 className="text-4xl font-bold text-white">
             Assemble Your Ultimate Dream 11 Cricket Team
           </h2>
