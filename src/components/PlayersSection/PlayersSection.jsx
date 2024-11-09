@@ -55,8 +55,8 @@ const PlayersSection = ({ coin, setCoin }) => {
 
   return (
     <div className="container mx-auto py-20">
-      <div className="flex justify-between">
-        <h3 className="text-3xl font-bold">
+      <div className="flex flex-col md:flex-row items-center justify-between">
+        <h3 className="text-xl md:text-3xl font-bold">
           {!isSelected
             ? `Available Players : ${players.length}`
             : `Selected Players : ${choosedPlayers.length}/6`}
@@ -64,19 +64,23 @@ const PlayersSection = ({ coin, setCoin }) => {
         <div>
           <button
             onClick={handleAvailableBtn}
-            className="text-base font-bold px-8 py-4 border-2 border-[#E7FE29]  bg-[#E7FE29] rounded-l-2xl"
+            className={`text-base font-bold px-4 py-2 md:px-8 md:py-4  border-2 border-[#E7FE29]  ${
+              !isSelected && "bg-[#E7FE29]"
+            } rounded-l-2xl`}
           >
             Availabe
           </button>
           <button
             onClick={handleSelectedBtn}
-            className="text-base font-bold px-8 py-4 border-2 border-[#E7FE29] bg-[#E7FE29] rounded-r-2xl"
+            className={`text-base font-bold px-4 py-2 md:px-8 md:py-4 border-2 border-[#E7FE29] ${
+              isSelected && "bg-[#E7FE29]"
+            } rounded-r-2xl`}
           >
             Selected {choosedPlayers.length}{" "}
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {!isSelected &&
           players.map((player) => (
             <Player

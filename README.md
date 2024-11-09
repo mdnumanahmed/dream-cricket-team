@@ -1,13 +1,12 @@
 # Dream Cricket Team
 
-**Project Description
+## Project Description
 
 This project is a web application to manage and select players for a fantasy team, with design elements based on a Figma template. Users have a set amount of in-app currency (coins) and can increase their coins to select players. The application allows toggling between available and selected players, includes an interactive Navbar and Banner, and provides notifications for actions like adding or removing players.
 
-- 
 - [Dream Cricket Team](https://github.com/vitejs/vite-plugin-react-swc)
 
-# Key Features
+## Key Features
 - Navbar and Coin Display: Shows the user’s coin balance (starting at 0) in the Navbar.
 
 - Banner with Coin Increase: A banner with a button that increases the user’s coin count on each click, allowing the user to select more players.
@@ -28,13 +27,12 @@ Available & Selected View Toggling:
 - Remove Player Functionality: A remove button on each selected player card to deselect players.
 
 Additional UI Sections:
+- Newsletter: Section for user subscription.
+- Footer: Styled according to the Figma design.
+- "Add More Players" Button: Displays available players again after some have been selected.
 
-Newsletter: Section for user subscription.
-Footer: Styled according to the Figma design.
-"Add More Players" Button: Displays available players again after some have been selected.
+- Application Customization: Custom web application title in place of the default Vite-react title.
 
-Application Customization: Custom web application title in place of the default Vite-react title.
-
-Notifications: Uses React-Toastify for all alerts and messages, enhancing the user experience.
+- Notifications: Uses React-Toastify for all alerts and messages, enhancing the user experience.
 
 These features will collectively create a well-structured, interactive player selection web application.
