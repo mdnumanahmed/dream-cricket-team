@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import Player from "../Player/Player";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
+import PropTypes from "prop-types";
+import { toast } from "react-toastify";
 
-const PlayersSection = () => {
+const PlayersSection = ({ coin, setCoin }) => {
   const [players, setPlayers] = useState([]);
   const [choosedPlayers, setChoosedPlayers] = useState([]);
   const [isSelected, setIsSelected] = useState(false);
@@ -22,14 +24,18 @@ const PlayersSection = () => {
     // );
     // if (!isExists) {
     // }
-    if (choosedPlayers.length < 6) {
+
+    if (choosedPlayers.length < 6 && player.biddingPrice < coin) {
       const newChoosed = [...choosedPlayers, player];
       setChoosedPlayers(newChoosed);
       const newAvailable = players.filter(
         (pl) => pl.playerId !== player.playerId
       );
       setPlayers(newAvailable);
+      setCoin(coin - player.biddingPrice);
+      return;
     }
+    toast.warning("You have not enough coin Or reached limit!");
   };
 
   const handleSelectedBtn = () => {
@@ -100,6 +106,11 @@ const PlayersSection = () => {
       </div>
     </div>
   );
+};
+
+PlayersSection.propTypes = {
+  coin: PropTypes.number.isRequired,
+  setCoin: PropTypes.func.isRequired,
 };
 
 export default PlayersSection;

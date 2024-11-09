@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import HeroImg from "../../../assets/banner-main.png";
 // import HeroBg from "../../../assets/bg-shadow.png";
 
-const Banner = () => {
+const Banner = ({ handleClaimCoin }) => {
   return (
     <div>
       <div
@@ -15,13 +16,20 @@ const Banner = () => {
           <h4 className="text-2xl font-medium text-[#FFFFFFB3]">
             Beyond Boundaries Beyond Limits
           </h4>
-          <button className="sora text-base font-bold px-5 py-3 rounded-2xl bg-gradient-to-t from-[#e9fe29cf] via-[#E7FE29] to-[#e9fe29cf] ring-2 ring-[#E7FE29] ring-offset-8 ring-offset-[#131313]">
+          <button
+            onClick={handleClaimCoin}
+            className="sora text-base font-bold px-5 py-3 rounded-2xl bg-gradient-to-t from-[#e9fe29cf] via-[#E7FE29] to-[#e9fe29cf] ring-2 ring-[#E7FE29] ring-offset-8 ring-offset-[#131313]"
+          >
             Claim Free Credit
           </button>
         </div>
       </div>
     </div>
   );
+};
+
+Banner.propTypes = {
+  handleClaimCoin: PropTypes.func.isRequired,
 };
 
 export default Banner;

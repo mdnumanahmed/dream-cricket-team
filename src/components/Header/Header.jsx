@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import logo from "../../../assets/logo.png";
 import { BsCoin } from "react-icons/bs";
 
-const Header = () => {
+const Header = ({ coin }) => {
   return (
     <div className="container mx-auto">
       <div className="navbar bg-base-100 max-h-16 border-2 mt-6 py-6">
@@ -63,13 +64,17 @@ const Header = () => {
             </ul>
           </div>
           <a className="md:ml-10 btn btn-outline">
-            0 Coin{" "}
+            {coin} Coin{" "}
             <BsCoin className="text-[#FDD835] bg-[#DB6704] rounded-full " />
           </a>
         </div>
       </div>
     </div>
   );
+};
+
+Header.propTypes = {
+  coin: PropTypes.number.isRequired,
 };
 
 export default Header;
